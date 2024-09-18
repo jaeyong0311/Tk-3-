@@ -1,0 +1,42 @@
+# c. 버튼 카운터 만들기 GUI만들기
+# 1. 버튼을 누르면 누른 횟수가 lable에 표시된다.
+# 2. reset 버튼을 생성하고
+# 3. resset 버튼을 누르면 지금까지 클릭한 횟수 초기화한다.
+
+# 필요한 이벤트 함수
+# - 버튼을 누를 때마다 횟수 세는 함수
+# - reset 버튼을 누르면 카운트가 초기화 되는 함수 
+
+# from tkinter import *
+
+# root = Tk() # 기본 창 생성
+# root.title("버튼 카운트 GUI")
+
+# # lable_1 관련 생성 및 설정 
+# label_1 = Label(root, text="옆의 버튼을 활용하세요.",fg='green', font=15)
+# label_1.pack(side=LEFT, padx=10, pady=10)
+
+
+
+# # 이벤트 함수 1정의 == 버튼 누른 값을 label_1로 표시
+# count = 0 # 변수의 초기값 설정
+# def click_btn():
+#     global count # count라는 변수를 전역변수로 사용
+#     count += 1
+#     label_1['text'] = '현재 버튼 클릭 수: ' + str(count)
+
+# # 이벤트 함수 2 정의 == reset 버튼
+# def reset():
+#     global count # 전역변수 사용 (별도의 변수 지정 필요x)
+#     count = 0 # reset 버튼이기 떄문에 count의 값은 0으로 설정
+
+#     label_1['text'] = '오른쪽 버튼을 클릭해주세요.'
+# # 클릭 관련 버튼 생성 및 설정
+# btn = Button(root, text="저를 클릭하세요!",command=click_btn)
+# btn.pack(side=LEFT, padx=10, pady=10)
+
+# # reset 관련 버튼 생성 및 설정
+# btn2 = Button(root, text="RESET BUTTON!",command=reset)
+# btn2.pack(side=LEFT, padx=10, pady=10)
+
+# root.mainloop()
